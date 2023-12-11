@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>investigación</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo"></div>
+        <a class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="menu">
+            <a href="#ini">Inicio</a>
+            <a href="#inv">Desarrollo</a>
+            <a href="#pub">impacto global</a>
+            <a href="#con">Contacto</a>
+            <div class="botones-login">
+                <a href="#" onclick="showLoginForm()" class="boton">Login</a>
+                <a href="#" onclick="showRegisterForm()" class="boton">Registro</a>
+            </div>
+        </div>
+        <!-- Formulario emergente de login -->
+        <div class="overlay" id="loginOverlay">
+            <div class="popup">
+                <h2>Ingresar</h2>
+                <form id="loginForm">
+                    <form id="login-form">
+                        <label for="username">Usuario:</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="button" onclick="login()">Iniciar Sesión</button>
+                    </form>
+                    <a class="close" onclick="closeForm('Ingresar')">×</a>
+            </div>
+        </div>
+        <!-- Formulario emergente de registro -->
+        <div class="overlay" id="registerOverlay">
+            <div class="popup">
+                <h2>Registrarse</h2>
+                <form id="registerForm">
+                    <label for="new-username">Nuevo usuario:</label>
+                    <input type="text" id="new-username" name="new-username" required>
+
+                    <label for="new-password">Nueva contraseña:</label>
+                    <input type="password" id="new-password" name="new-password" required>
+
+                    <button type="button" onclick="register()">Registrarse</button>
+                </form>
+                <a class="close" onclick="closeForm('Registrarse')">×</a>
+            </div>
+        </div>
+    </nav>
+    <header></header>
+    <article>
+        <a id="ini"></a>
+        <h2>Inicio</h2>
+        <p>En un giro escalofriante de los acontecimientos en Oriente Medio, Israel ha declarado oficialmente un estado
+            de guerra después de un devastador ataque perpetrado por Hama. Este acto de hostilidad ha elevado las
+            tensiones en la región a niveles críticos, desencadenando una respuesta inmediata por parte de las fuerzas
+            israelíes y amenazando con sumir a la región en un conflicto de consecuencias impredecibles.</p>
+
+        <p>El ataque, atribuido a Hama, una facción enemiga de Israel, se llevó a cabo con una ferocidad sin
+            precedentes. Las fuerzas israelíes han respondido con rapidez y determinación, movilizando recursos
+            militares y declarando un estado de guerra en un intento de contener la amenaza inminente. La situación en
+            la región es fluida y en constante evolución, con informes de enfrentamientos en diversos frentes y la
+            movilización de tropas en ambos lados.p>
+
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="iimg/1.jpg" alt="Imagen 1" />
+            </div>
+            <div class="gallery-item">
+                <img src="iimg/2.jpg" alt="Imagen 2" />
+            </div>
+            <div class="gallery-item">
+                <img src="iimg/3.jpg" alt="Imagen 3" />
+            </div>
+        </div>
+    </article>
+    <article id="inv">
+        <h2>Desarrollo</h2>
+        <div class="contenedor">
+            <iframe width="1180" height="664" src="https://www.youtube.com/embed/lTjw9kYebio"
+                title="Israel declara estado de guerra tras ataque de Hamas: ¿Qué sucederá ahora?" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>El ataque, atribuido a Hama, una facción enemiga de Israel, se llevó a cabo con una ferocidad sin
+                precedentes. Las fuerzas israelíes han respondido con rapidez y determinación, movilizando recursos
+                militares y declarando un estado de guerra en un intento de contener la amenaza inminente. La situación
+                en la región es fluida y en constante evolución, con informes de enfrentamientos en diversos frentes y
+                la movilización de tropas en ambos lados.</p>
+        </div>
+        <div class="contenedor">
+            <<iframe width="1128" height="635" src="https://www.youtube.com/embed/oaKIfcOYZ98"
+                title="Resumen en video de la guerra Israel - Hamas: noticias del 10 de diciembre de 2023"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+                <p>El gobierno israelí ha hecho un llamado a la comunidad internacional para condenar el ataque y
+                    respaldar
+                    su respuesta defensiva. Mientras tanto, Hama justifica sus acciones alegando provocaciones previas y
+                    acusando a Israel de violar acuerdos internacionales. La incertidumbre crece a medida que el
+                    conflicto
+                    se intensifica, amenazando con desestabilizar aún más la ya volátil situación en la región.
+                </p>
+        </div>
+        <div class="contenedor">
+            <iframe width="1180" height="664" src="https://www.youtube.com/embed/6ZDYWes2UJ8"
+                title="Resumen en video de la guerra Israel - Hamas: noticias del 30 de noviembre de 2023"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <p>Consecuencias Humanitarias:
+                Además de las implicaciones políticas y estratégicas, el conflicto también plantea serias preocupaciones
+                humanitarias. Las comunidades locales se encuentran atrapadas en medio de la violencia, enfrentando
+                desplazamientos masivos y un aumento en las tensiones sociales. Organizaciones internacionales de ayuda
+                humanitaria están evaluando la situación para brindar asistencia a aquellos afectados por el conflicto.
+                La difícil realidad es que la población civil se ve amenazada por la escalada de hostilidades, lo que
+                intensifica la necesidad de una respuesta rápida y coordinada para abordar las necesidades humanitarias
+                urgentes en la región. En este contexto, la comunidad internacional también se enfrenta al desafío de
+                garantizar la seguridad y el bienestar de los civiles afectados por el conflicto en medio de la
+                complejidad de la situación en Oriente Medio.p>
+        </div>
+
+        </div>
+        </div>
+    </article>
+
+    <article id="pub">
+        <h2>impacto global</h2>
+        <div class="contenedor">
+            <p>La declaración de estado de guerra en Oriente Medio ha generado una profunda inquietud a nivel mundial,
+                llevando a líderes internacionales a expresar su preocupación ante la posibilidad de una escalada del
+                conflicto. Las consecuencias potenciales de este enfrentamiento trascienden las fronteras de la región,
+                afectando la estabilidad geopolítica y económica a nivel global. La comunidad internacional se encuentra
+                en alerta máxima, consciente de que un conflicto de esta magnitud podría tener ramificaciones
+                significativas en la seguridad energética, el comercio internacional y las relaciones diplomáticas.
+                                                               
+                                   
+                            
+            </p>
+            <img src="iimg/4.jpg" alt="" />
+        </div>
+        <div class="contenedor">
+            <p>La crisis también ha desencadenado una serie de llamados urgentes a la diplomacia y la mediación
+                internacional. Múltiples países y organismos han instado a un cese inmediato de las hostilidades y han
+                ofrecido sus buenos oficios para facilitar negociaciones de paz. La preocupación principal radica en
+                evitar que la situación se salga de control y que se produzca un conflicto a mayor escala con impactos
+                impredecibles en la estabilidad global.</p>
+            <img src="iimg/5.webp" alt="" />
+        </div>
+        <div class="contenedor">
+            <p>Además, la incertidumbre en los mercados financieros ha aumentado a medida que los inversionistas evalúan
+                los posibles efectos económicos de la crisis en Oriente Medio. La volatilidad en los precios del
+                petróleo y otros recursos estratégicos se ha convertido en motivo de gran preocupación, ya que el
+                conflicto amenaza con desestabilizar las rutas comerciales y afectar el suministro de energía a nivel
+                mundial. En este contexto, la comunidad internacional se encuentra en un delicado equilibrio, buscando
+                soluciones diplomáticas mientras se prepara para hacer frente a cualquier escenario que pueda surgir de
+                esta peligrosa situación en Oriente Medio.</p>
+            <img src="iimg/6.webp" alt="" />
+        </div>
+
+    </article>
+
+    <article id="con">
+        <h2>Contacto</h2>
+        <p>¿Tiene preguntas o comentarios? No dude en ponerse en contacto con nosotros...</p>
+
+        <h2>Formulario de Contacto</h2>
+
+        <form action="#" method="post" id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </article>
+
+    <script src="script.js"></script>
+    <footer>
+        <a href="https://www.facebook.com" class="icon-link"><i class="fab fa-facebook-square icon"></i></a>
+        <a href="https://www.pinterest.com" class="icon-link"><i class="fab fa-pinterest icon"></i></a>
+        <a href="https://www.instagram.com" class="icon-link"><i class="fab fa-instagram icon"></i></a>
+        <a href="https://twitter.com" class="icon-link"><i class="fab fa-twitter icon"></i></a>
+
+        <p class="p2">Esta pagina fue echa por Emanuel Quispe Choque carrera de informatica en la facultad de ciencias
+            puras y naturales de la UMSA</p>
+    </footer>
+
+</html>
